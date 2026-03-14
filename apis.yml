@@ -1,0 +1,15 @@
+name: CLAUDE.md
+description: Configuration file for Claude Code providing project-specific context,
+  coding conventions, build commands, and behavioral instructions that persist across
+  sessions.
+url: ''
+tags:
+- AI Agents
+- Claude Code
+- Developer Workflow
+- Coding Standards
+- AI Copilot
+created: '2025'
+modified: '2025'
+apis: []
+common: []

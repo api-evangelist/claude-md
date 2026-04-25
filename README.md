@@ -61,7 +61,7 @@ Auto memory is the machine-managed companion to CLAUDE.md. Claude Code maintains
 - [Settings Reference](https://code.claude.com/docs/en/settings)
 - [Hooks Reference](https://code.claude.com/docs/en/hooks)
 - [JSON-LD Context](json-ld/claude-md-context.jsonld)
-- [Naftiko Capabilities](naftiko/claude-md-capabilities.yml)
+- [Naftiko Capabilities](capabilities/claude-md-capabilities.yml)
 
 ## Maintainers
 

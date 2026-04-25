@@ -135,7 +135,7 @@ common:
   - type: JSON-LD
     url: json-ld/claude-md-context.jsonld
   - type: Naftiko Capabilities
-    url: naftiko/claude-md-capabilities.yml
+    url: capabilities/claude-md-capabilities.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

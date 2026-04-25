@@ -1,0 +1,32 @@
+capabilities:
+  - id: claude-md.persist-instructions
+    name: Persist project instructions across agent sessions
+    description: >-
+      Use a project-scoped CLAUDE.md to give Claude Code persistent
+      build commands, coding standards, conventions, and architectural
+      guidance that load into context at the start of every session.
+  - id: claude-md.layer-scope
+    name: Layer instructions across organization, user, and project scopes
+    description: >-
+      Compose managed policy CLAUDE.md (organization), user CLAUDE.md
+      (personal), project CLAUDE.md (team), and local CLAUDE.local.md
+      (private) so that all four layers are concatenated into context
+      with appropriate precedence.
+  - id: claude-md.compose-via-imports
+    name: Compose memory files via @path imports
+    description: >-
+      Pull supplementary instruction files such as AGENTS.md, README,
+      package.json, or shared home-directory rules into a CLAUDE.md
+      using the @path/to/file import syntax with up to five hops.
+  - id: claude-md.scope-rules-by-path
+    name: Scope rules to specific file patterns
+    description: >-
+      Place modular markdown files under .claude/rules/ with YAML
+      frontmatter paths globs so individual rule sets only load when
+      Claude Code reads files matching the patterns.
+  - id: claude-md.bridge-other-agents
+    name: Bridge to other coding agent memory formats
+    description: >-
+      Use a CLAUDE.md that imports AGENTS.md so Claude Code and other
+      agents share the same instruction surface without duplicating
+      content.

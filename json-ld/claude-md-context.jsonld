@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "@vocab": "https://apievangelist.com/vocab/claude-md/",
+    "schema": "https://schema.org/",
+    "cmd": "https://code.claude.com/vocab/",
+    "Standard": "schema:DefinedTerm",
+    "MemoryFile": "cmd:MemoryFile",
+    "Scope": "cmd:Scope",
+    "Rule": "cmd:Rule",
+    "Import": "cmd:Import",
+    "AutoMemory": "cmd:AutoMemory",
+    "Tool": "schema:SoftwareApplication",
+    "name": "schema:name",
+    "description": "schema:description",
+    "path": "cmd:filePath",
+    "scope": "cmd:scope",
+    "paths": "cmd:pathPatterns",
+    "createdAt": "schema:dateCreated",
+    "updatedAt": "schema:dateModified"
+  }
+}

@@ -3,7 +3,7 @@ name: CLAUDE.md
 url: https://raw.githubusercontent.com/api-evangelist/claude-md/refs/heads/main/apis.yml
 created: '2025-01-01'
 modified: '2026-04-23'
-type: Standard
+kind: standard
 access: Open
 position: Standard
 specificationVersion: '0.19'
@@ -132,7 +132,7 @@ common:
     url: https://code.claude.com/docs/en/settings
   - type: Hooks Reference
     url: https://code.claude.com/docs/en/hooks
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/claude-md-context.jsonld
   - type: Naftiko Capabilities
     url: capabilities/claude-md-capabilities.yml

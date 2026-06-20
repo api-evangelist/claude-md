@@ -7,7 +7,7 @@ kind: standard
 access: Open
 position: Standard
 specificationVersion: '0.19'
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AI Agents
   - Claude Code
@@ -42,7 +42,7 @@ artifacts:
       - Format
       - Markdown
       - Memory
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://code.claude.com/docs/en/memory
     properties:
       - url: https://code.claude.com/docs/en/memory
@@ -60,7 +60,7 @@ artifacts:
     tags:
       - Composition
       - Imports
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://code.claude.com/docs/en/memory#import-additional-files
     properties:
       - url: https://code.claude.com/docs/en/memory#import-additional-files
@@ -76,7 +76,7 @@ artifacts:
     tags:
       - Hierarchy
       - Scope
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://code.claude.com/docs/en/memory#choose-where-to-put-claude-md-files
     properties:
       - url: https://code.claude.com/docs/en/memory#choose-where-to-put-claude-md-files
@@ -93,7 +93,7 @@ artifacts:
     tags:
       - Path-Scoped
       - Rules
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://code.claude.com/docs/en/memory#organize-rules-with-claude/rules/
     properties:
       - url: https://code.claude.com/docs/en/memory#organize-rules-with-claude/rules/
@@ -108,7 +108,7 @@ artifacts:
     tags:
       - Auto Memory
       - MEMORY.md
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://code.claude.com/docs/en/memory#auto-memory
     properties:
       - url: https://code.claude.com/docs/en/memory#auto-memory

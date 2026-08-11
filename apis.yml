@@ -145,8 +145,6 @@ common:
     url: https://code.claude.com/docs/en/hooks
   - type: JSONLD
     url: json-ld/claude-md-context.jsonld
-  - type: X-NaftikoCapabilities
-    url: capabilities/claude-md-capabilities.yml
   - type: LlmsText
     url: https://claude.com/llms.txt
 maintainers:

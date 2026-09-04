@@ -1,5 +1,6 @@
 aid: claude-md
 name: CLAUDE.md
+x-type: convention
 url: https://raw.githubusercontent.com/api-evangelist/claude-md/refs/heads/main/apis.yml
 deliveryModel:
   model: unknown

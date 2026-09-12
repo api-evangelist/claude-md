@@ -143,6 +143,8 @@ artifacts:
       across sessions. The first 200 lines or 25 KB of MEMORY.md load
       at session start.
 common:
+  - type: Website
+    url: https://www.claude.com/
   - type: Specification
     url: https://code.claude.com/docs/en/memory
   - type: Documentation

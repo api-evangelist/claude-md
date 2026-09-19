@@ -40,6 +40,16 @@ tags:
   - Markdown
   - Memory
   - Project Configuration
+  - Standards
+tags_raw:
+  - AI Agents
+  - Claude Code
+  - Coding Standards
+  - Configuration
+  - Developer Workflow
+  - Markdown
+  - Memory
+  - Project Configuration
   - Standard
 description: >-
   CLAUDE.md is the markdown-based project memory format used by
@@ -81,6 +91,9 @@ artifacts:
   - aid: claude-md:imports
     name: CLAUDE.md @path Imports
     tags:
+      - COMPOSITION
+      - Import
+    tags_raw:
       - Composition
       - Imports
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg

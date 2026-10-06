@@ -25,7 +25,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 created: '2025-01-01'
-modified: '2026-04-23'
+modified: '2026-10-06'
 kind: standard
 access: Open
 position: Standard
@@ -156,6 +156,8 @@ artifacts:
       across sessions. The first 200 lines or 25 KB of MEMORY.md load
       at session start.
 common:
+  - url: https://claude.com/resources/articles
+    type: Blog
   - type: Website
     url: https://www.claude.com/
   - type: Specification

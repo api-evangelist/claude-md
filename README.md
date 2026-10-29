@@ -1,4 +1,4 @@
-# CLAUDE.md (claude-md)
+# CLAUDE.md
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,72 +64,44 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-CLAUDE.md is the markdown-based project memory format used by Anthropic's Claude Code CLI to give the model persistent, session-spanning instructions about a codebase. CLAUDE.md files are plain markdown that Claude Code loads at session start by walking up the directory tree from the working directory, picking up files at organization-managed, user (~/.claude/CLAUDE.md), project (./CLAUDE.md or ./.claude/CLAUDE.md), and local (./CLAUDE.local.md) scopes. The format supports an `@path` import syntax for composing files together (up to five hops), HTML block comments that are stripped before injection, an AGENTS.md import pattern for compatibility with other agents, and a complementary `.claude/rules/` directory of path-scoped markdown rules with YAML frontmatter.
+CLAUDE.md is the markdown-based project memory format used by Anthropic's Claude Code CLI to give the model persistent, session-spanning instructions about a codebase. CLAUDE.md files are plain markdown that Claude Code loads at the start of every session by walking up the directory tree from the working directory, picking up files at organization-managed, user (~/.claude/CLAUDE.md), project (./CLAUDE.md or ./.claude/CLAUDE.md), and local (./CLAUDE.local.md) scopes. The format supports an @path import syntax for composing files together (up to five hops, relative or absolute), HTML block comments that are stripped before injection, an AGENTS.md import pattern for compatibility with other agents, and a complementary .claude/rules/ directory of path-scoped markdown rules with YAML frontmatter. CLAUDE.md is the human-authored counterpart to Claude Code's auto memory at ~/.claude/projects/<project>/memory/MEMORY.md, which Claude writes itself.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/claude-md/refs/heads/main/apis.yml)
+**Areas:** AI Agents · Claude Code · Coding Standards · Configuration · Developer Workflow · Markdown · Memory · Project Configuration · Standards
 
-## Scope
+## CLAUDE.md on APIs.io
 
-- **Type:** Standard
-- **Position:** Standard
-- **Access:** Open
+Everything profiled for CLAUDE.md is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/claude-md/](https://apis.io/providers/claude-md/)** — or go straight to one of the APIs or properties below.
 
-## Tags:
+### Published properties
 
- - AI Agents, Claude Code, Coding Standards, Configuration, Developer Workflow, Markdown, Memory, Project Configuration, Standard
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### JSON-LD (1)
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-04-23
+Linked-data contexts for the provider's vocabulary.
 
-## Standard Artifacts
+- [Claude Md Context](https://apis.io/jsonld/claude-md/claude-md-context/)
 
-### CLAUDE.md File Format
-Plain-markdown file containing project, user, or organization-wide instructions that Claude Code loads as a user message at session start. Recommended size is under 200 lines per file with concrete, verifiable instructions and markdown headers and bullets for structure.
+## Where to find this API
 
-**Reference:** [https://code.claude.com/docs/en/memory](https://code.claude.com/docs/en/memory)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### CLAUDE.md @path Imports
-The `@path/to/file` syntax expands and inlines another file into a CLAUDE.md at load time. Imports support relative and absolute paths, recursive imports up to five hops, and are commonly used to pull in README, AGENTS.md, package.json, or shared instruction files from a user's home directory.
-
-**Reference:** [https://code.claude.com/docs/en/memory#import-additional-files](https://code.claude.com/docs/en/memory#import-additional-files)
-
-### CLAUDE.md Scope Hierarchy
-CLAUDE.md resolves through four scopes:
-
-| Scope | Location | Sharing |
-|-------|----------|---------|
-| Managed policy | `/Library/Application Support/ClaudeCode/CLAUDE.md`, `/etc/claude-code/CLAUDE.md`, `C:\Program Files\ClaudeCode\CLAUDE.md` | Organization-wide via MDM/Group Policy |
-| Project | `./CLAUDE.md` or `./.claude/CLAUDE.md` | Team via source control |
-| User | `~/.claude/CLAUDE.md` | Just you, all projects |
-| Local | `./CLAUDE.local.md` | Just you, current project (gitignored) |
-
-All discovered files are concatenated into context rather than overriding each other.
-
-### .claude/rules/ Directory
-Modular markdown rule files with optional YAML frontmatter declaring a `paths` list of glob patterns. Rules without paths load at launch alongside CLAUDE.md; path-scoped rules load only when Claude reads files matching the patterns.
-
-**Reference:** [https://code.claude.com/docs/en/memory#organize-rules-with-claude/rules/](https://code.claude.com/docs/en/memory#organize-rules-with-claude/rules/)
-
-### Claude Code Auto Memory
-Auto memory is the machine-managed companion to CLAUDE.md. Claude Code maintains `~/.claude/projects/<project>/memory/MEMORY.md` as a concise index plus topic files written and read by the agent across sessions. The first 200 lines or 25 KB of MEMORY.md load at session start.
-
-**Reference:** [https://code.claude.com/docs/en/memory#auto-memory](https://code.claude.com/docs/en/memory#auto-memory)
-
-## Common Properties
-
-- [Specification](https://code.claude.com/docs/en/memory)
+- [Website](https://www.claude.com/)
 - [Documentation](https://code.claude.com/docs/en/memory#claude-md-files)
-- [Vendor (Anthropic)](https://www.anthropic.com/)
-- [Tool (Claude Code)](https://code.claude.com/)
-- [Settings Reference](https://code.claude.com/docs/en/settings)
-- [Hooks Reference](https://code.claude.com/docs/en/hooks)
-- [JSON-LD Context](json-ld/claude-md-context.jsonld)
-- [Naftiko Capabilities](capabilities/claude-md-capabilities.yml)
+- [Blog](https://claude.com/resources/articles)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+Not yet rated. See [apis.io/providers/claude-md/](https://apis.io/providers/claude-md/).
 
-**Email:** kin@apievangelist.com
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for CLAUDE.md: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/claude-md/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
